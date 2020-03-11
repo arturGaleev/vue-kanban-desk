@@ -36,7 +36,6 @@ export default {
           tasks = tasks.filter(i => i.userIDs.indexOf(user.id) !== -1)
         })
       }
-      console.log(nameFilter)
       if (nameFilter.length) {
         tasks = tasks.filter(i => nameFilter.indexOf(i.id) !== -1)
       }
