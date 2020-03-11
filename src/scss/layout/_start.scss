@@ -1,0 +1,70 @@
+/* Файл со стартовыми значениями стилей для проекта */
+@include reset();
+
+html {
+  font-size: 62.5%;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 110rem;
+  position: relative;
+  line-height: 2.8rem;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: $color-text;
+}
+
+ul, ol {
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  color: $color-text;
+  transition: all .3s ease;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+
+.row {
+  @include row-flex();
+  justify-content: space-between;
+}
+
+.row-fl {
+  @include row-float;
+}
+
+.container {
+  @include wrapper();
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.hidden {
+  overflow: hidden!important;
+}

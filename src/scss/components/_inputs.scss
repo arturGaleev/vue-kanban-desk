@@ -1,0 +1,45 @@
+*::-webkit-input-placeholder{
+  color: $color-grey;
+  opacity: 1;
+}
+
+*:-moz-placeholder{
+  color: $color-grey;
+  opacity: 1;
+}
+*::-moz-placeholder{
+  color: $color-grey;
+  opacity: 1;
+}
+*:-ms-input-placeholder{
+  color: $color-grey;
+  opacity: 1;
+}
+
+::placeholder{color:$color-grey}
+
+input[type="text"] {
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 1rem;
+  height: 3rem;
+  border: 1px solid fade_out($color-border, .7);
+  transition: all .3s ease-in-out;
+  width: 100%;
+  background: #fff;
+  font-size: 1.4rem;
+  appearance: none;
+  &:hover {
+    border: 1px solid darken($color-grey, 30%);
+  }
+  &:focus {
+    border: 1px solid $color-text;
+  }
+}
+
+.v-input {
+  p {
+    font-size: 1.2rem;
+  }
+}
